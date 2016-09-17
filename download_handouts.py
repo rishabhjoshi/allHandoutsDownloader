@@ -16,7 +16,7 @@ links = [a.attrs.get('href') for a in soup.select('tr a[href^=/HANDOUTS]')]
 #** try to do usin regex
 
 currdirectory = os.getcwd()
-directory = currdirectory+'/Handouts'  # change if you want
+directory = currdirectory+'/../Handouts'  # change if you want
 if not os.path.exists(directory):
     os.makedirs(directory)
 
